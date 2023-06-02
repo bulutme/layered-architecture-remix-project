@@ -1,7 +1,7 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
+  serverDependenciesToBundle: ["axios"],
   ignoredRouteFiles: ["**/.*"],
-
   serverModuleFormat: "cjs",
   future: {
     v2_errorBoundary: true,
