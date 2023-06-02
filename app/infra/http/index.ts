@@ -12,7 +12,7 @@ class AxiosHttpClient implements HttpPostClient, HttpGetClient {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: process.env.PRODUCTS_URL,
+      baseURL: process.env.API_PRODUCTS_URL,
       headers: {
         "Content-Type": "application/json",
       },

@@ -12,7 +12,7 @@ class ProductService implements Product {
 
   getProductDetail(code: string | number): Promise<IProductDetailResponse> {
     return AxiosHttpClient.get<IProductDetailResponse>({
-      url: `${process.env.SINGLE_PRODUCT_URL}?code=` + code,
+      url: `${process.env.API_SINGLE_PRODUCT_URL}?code=` + code,
     });
   }
 }

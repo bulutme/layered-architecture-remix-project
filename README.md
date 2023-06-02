@@ -2,6 +2,18 @@
 
 - [Remix Docs](https://remix.run/docs)
 
+## Env
+
+Create .env file at root
+
+```sh
+API_PRODUCTS_URL=<product-list-api-url>
+```
+
+```sh
+API_SINGLE_PRODUCT_URL=<single-product-list-api-url>
+```
+
 ## Development
 
 From your terminal:
