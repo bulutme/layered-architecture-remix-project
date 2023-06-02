@@ -46,7 +46,6 @@ export default function Index() {
     if (!nextUrl) return;
     setIsLoading(true);
     const res = await getAllProducts(nextUrl);
-    console.log(res, "AAAA");
     setProducts((prev) => [...prev, ...res.result.products]);
     setNextUrl(res.result.nextUrl);
     setIsLoading(false);

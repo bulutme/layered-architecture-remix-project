@@ -1,4 +1,4 @@
-# Welcome to Remix!
+# Akakçe Remix Case Study!
 
 - [Remix Docs](https://remix.run/docs)
 
@@ -11,6 +11,14 @@ npm run dev
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
+
+## Test
+
+All test cases will be running, you can check console
+
+```sh
+npm run test
+```
 
 ## Deployment
 
@@ -51,3 +59,13 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+That project is built according to Clean Arthitecture and SOLID principles.
+
+Single Responsibility Principle (SRP)  
+Open Closed Principle (OCP).  
+Liskov Substitution Principle (LSP).  
+Interface Segregation Principle (ISP).  
+Dependency Inversion Principle (DIP)  
+Separation of Concerns (SOC).  
+Don't Repeat Yourself (DRY)
