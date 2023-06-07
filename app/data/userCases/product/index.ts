@@ -7,11 +7,13 @@ import AxiosHttpClient from "~/infra/http";
 
 class ProductService implements Product {
   async getProductList(url: string): Promise<IProductListResponse> {
-    return AxiosHttpClient.get<IProductListResponse>({ url, config: {} });
+    return await AxiosHttpClient.get<IProductListResponse>({ url, config: {} });
   }
 
-  getProductDetail(code: string | number): Promise<IProductDetailResponse> {
-    return AxiosHttpClient.get<IProductDetailResponse>({
+  async getProductDetail(
+    code: string | number
+  ): Promise<IProductDetailResponse> {
+    return await AxiosHttpClient.get<IProductDetailResponse>({
       url: `${process.env.API_SINGLE_PRODUCT_URL}?code=` + code,
     });
   }
