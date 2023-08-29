@@ -1,4 +1,4 @@
-# Akakçe Remix Case Study!
+# Remix
 
 - [Remix Docs](https://remix.run/docs)
 
